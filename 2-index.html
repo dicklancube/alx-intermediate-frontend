@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2x2 Nested Grid Layout</title>
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="p-4 font-sans">
+
+  <header class="text-center mb-4">
+    <h1 class="text-2xl font-bold">2 x 2 Nested Grid Layout</h1>
+  </header>
+
+  <!-- ✅ Main 2x2 grid -->
+  <main class="grid grid-cols-2 gap-4">
+
+    <!-- ✅ First parent grid -->
+    <div class="grid grid-cols-2 p-4 gap-2 bg-blue-200">
+      <div class="bg-blue-400 p-2">Nested 1</div>
+      <div class="bg-blue-500 p-2">Nested 2</div>
+    </div>
+
+    <!-- ✅ Second parent grid -->
+    <div class="grid grid-cols-2 p-4 gap-2 bg-red-200">
+      <div class="bg-red-400 p-2">Nested 1</div>
+      <div class="bg-red-500 p-2">Nested 2</div>
+    </div>
+
+    <!-- ✅ Third parent grid -->
+    <div class="grid grid-cols-2 p-4 gap-2 bg-green-200">
+      <div class="bg-green-400 p-2">Nested 1</div>
+      <div class="bg-green-500 p-2">Nested 2</div>
+    </div>
+
+    <!-- ✅ Fourth parent grid -->
+    <div class="grid grid-cols-2 p-4 gap-2 bg-yellow-200">
+      <div class="bg-yellow-400 p-2">Nested 1</div>
+      <div class="bg-yellow-500 p-2">Nested 2</div>
+    </div>
+
+  </main>
+</body>
+</html>
