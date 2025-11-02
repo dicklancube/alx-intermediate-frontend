@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid + Flex + Image Gallery</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Keep the small-screen grid rule for the main layout, as before -->
+  <style>
+    @media (max-width: 768px) {
+      main { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="p-4">
+  <header class="bg-blue-500 text-white p-4">
+    <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+  </header>
+
+  <!-- Previous task's main layout -->
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+    <!-- Spans 2 cols on large screens; flex inside -->
+    <section class="lg:col-span-2 flex gap-4">
+      <div class="w-1/2 p-4 bg-red-200">Flexbox Item 1</div>
+      <div class="w-1/2 p-4 bg-red-400">Flexbox Item 2</div>
+    </section>
+
+    <aside class="bg-green-200 p-4">Sidebar</aside>
+  </main>
+
+  <!-- ▼ New Image Gallery Section -->
+  <section class="mt-8">
+    <h2 class="text-2xl font-semibold mb-4">Image Gallery</h2>
+
+    <!-- Grid: 1 column by default; 3 columns on large screens -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <!-- Use any image URLs; these are placeholders -->
+      <figure class="rounded-lg overflow-hidden bg-gray-100">
+        <img src="https://picsum.photos/seed/101/800/600" alt="Gallery image 1" class="w-full h-auto" />
+      </figure>
+      <figure class="rounded-lg overflow-hidden bg-gray-100">
+        <img src="https://picsum.photos/seed/102/800/600" alt="Gallery image 2" class="w-full h-auto" />
+      </figure>
+      <figure class="rounded-lg overflow-hidden bg-gray-100">
+        <img src="https://picsum.photos/seed/103/800/600" alt="Gallery image 3" class="w-full h-auto" />
+      </figure>
+      <figure class="rounded-lg overflow-hidden bg-gray-100">
+        <img src="https://picsum.photos/seed/104/800/600" alt="Gallery image 4" class="w-full h-auto" />
+      </figure>
+      <figure class="rounded-lg overflow-hidden bg-gray-100">
+        <img src="https://picsum.photos/seed/105/800/600" alt="Gallery image 5" class="w-full h-auto" />
+      </figure>
+      <figure class="rounded-lg overflow-hidden bg-gray-100">
+        <img src="https://picsum.photos/seed/106/800/600" alt="Gallery image 6" class="w-full h-auto" />
+      </figure>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white p-4 mt-8">
+    <p>&copy; 2025 Dickla Ncube's Blog</p>
+  </footer>
+</body>
+</html>
